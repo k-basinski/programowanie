@@ -1,0 +1,224 @@
+---
+interact_link: content/ify.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  Instrukcje warunkowe
+prev_page:
+  url: /operatory.html
+  title: |-
+    Operatory
+next_page:
+  url: /listy.html
+  title: |-
+    Listy
+suffix: .ipynb
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Instrukcje-warunkowe">Instrukcje warunkowe<a class="anchor-link" href="#Instrukcje-warunkowe"> </a></h2><p>Czasem chcielibyśmy, żeby nasz program zrobił coś tylko wtedy, gdy spełniony jest jakiś warunek. Wracając do analogii z pralką - pralka nie wykona wirowania jeśli naciśniemy odpowiedni przycisk. Tego rodzaju funkcję w Pythonie spełniają konstrukcje <code>if</code>, <code>elif</code> i <code>else</code>.</p>
+<h3 id="If">If<a class="anchor-link" href="#If"> </a></h3><p>Jeżeli chcemy, żeby jakiś fragment kodu wykonał się wtedy i tylko wtedy gdy jakiś warunek jest spełniony (ma wartość logiczną <code>True</code>), używamy konstrukcji <code>if</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">papugi</span> <span class="o">=</span> <span class="mi">11</span>
+
+<span class="k">if</span> <span class="n">papugi</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jest więcej niż 10 papug!&quot;</span><span class="p">)</span>
+    
+<span class="k">if</span> <span class="n">papugi</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nie ma żadnej papugi. Papuga przestała być.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Jest więcej niż 10 papug!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Widzimy, że nasz program wykonał instrukcję po pierwszym <code>if</code>ie, zignorował zaś instrukcję po drugim. Stało się tak dlatego, że w pierwszej instrukcji jest prawdziwy, a w drugiej nie. Zwróć uwagę na składnię: po warunku mamy dwukropek, kolejna linia zaś zaczyna się od wcięcia (czterech spacji, jednego taba). To wcięcie oznacza <em>blok kodu</em>, fragment programu który traktowany jest jak jedna całość przez interpreter Pythona. W tym wypadku blok ma tylko jedną linijkę, ale może mieć dużo więcej, jak na przykładzie poniżej:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="s2">&quot;spam&quot;</span> <span class="o">!=</span> <span class="s2">&quot;eggs&quot;</span><span class="p">:</span>
+    <span class="n">spam</span> <span class="o">=</span> <span class="s2">&quot;eggs&quot;</span>
+    <span class="n">eggs</span> <span class="o">=</span> <span class="s2">&quot;spam&quot;</span>
+    <span class="k">if</span> <span class="n">spam</span> <span class="o">==</span> <span class="s2">&quot;eggs&quot;</span><span class="p">:</span>
+        <span class="n">eggs</span> <span class="o">=</span> <span class="s2">&quot;eggs&quot;</span>
+        <span class="n">spam</span> <span class="o">=</span> <span class="s2">&quot;spam&quot;</span>
+        <span class="n">eggs</span> <span class="o">=</span> <span class="n">spam</span>
+        <span class="k">if</span> <span class="s2">&quot;eggs&quot;</span> <span class="o">!=</span> <span class="n">spam</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SPAAAAAM!!!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>SPAAAAAM!!!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Else">Else<a class="anchor-link" href="#Else"> </a></h3><p>Gdy chcemy, żeby program zrobił coś w razie spełnionego warunku, a coś zupełnie innego w przeciwnym wypadku, stosujemy komendę <code>else</code>.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="s2">&quot;eggs&quot;</span>
+<span class="k">if</span> <span class="n">food</span> <span class="o">==</span> <span class="s2">&quot;spam&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SPAAAM!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;And now for something completely different...&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>And now for something completely different...
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Elif">Elif<a class="anchor-link" href="#Elif"> </a></h3><p>Jeśli chcemy przetestować wiele warunków po kolei, możemy skorzystać z komendy <code>elif</code> (skrót od <em>else if</em> czyli <em>w przedciwnym wypadku, jeżeli...</em>). W ten sposób tworzymy ciąg instrukcji warunkowych, a jeżeli skończymy na <code>else</code> to mamy pewność, że wykona się dokładnie jedna z instrukcji. Przykład poniżej pokazuje, w jaki sposób można wykonać różne fragmenty kodu dla różnych wartości jakiejś zmiennej - jest to bardzo częsta praktyka programistyczna. Uwaga na wcięcia!</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imie</span> <span class="o">=</span> <span class="s2">&quot;Robin&quot;</span>
+<span class="k">if</span> <span class="n">imie</span> <span class="o">==</span> <span class="s2">&quot;Artur&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jestem Artur, Król Brytonów!&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">imie</span> <span class="o">==</span> <span class="s2">&quot;Lancelot&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jestem Sir Lancelot, odważny!&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">imie</span> <span class="o">==</span> <span class="s2">&quot;Robin&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jestem Sir Robin, nie-tak-odważny-jak-Lancelot!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nie bardzo wiem kim jestem...&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Jestem Sir Robin, nie-tak-odważny-jak-Lancelot!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+
+
+    </main>
+    
