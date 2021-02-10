@@ -1,0 +1,2436 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moduły &#8212; Programowanie</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Funkcje" href="funkcje.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Programowanie</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="wstep.html">
+   Wstęp
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Kurs podstawowy
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="narzedzia.html">
+   Narzędzia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html#alt-h1">
+   Alt-H1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="zmienne.html">
+   Twój pierwszy program
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="operatory.html">
+   Operatory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="listy.html">
+   Listy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ify.html">
+   Instrukcje warunkowe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="petle.html">
+   Pętle
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Kurs zaawansowany
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="funkcje.html">
+   Funkcje
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Moduły
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/moduly.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/moduly.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modul-pandas">
+   Moduł
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pandas
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drug-use-by-age">
+   Drug Use By Age
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import">
+   Import
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rozne-sposoby-pokazywania-df">
+   Różne sposoby pokazywania
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     df
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wybieranie-poszczegolnych-kolumn">
+   Wybieranie poszczególnych kolumn
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wybieranie-wierszy">
+   Wybieranie wierszy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loc">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     loc
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iloc">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     iloc
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proste-statystyki">
+   Proste statystyki
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="moduly">
+<h1>Moduły<a class="headerlink" href="#moduly" title="Permalink to this headline">¶</a></h1>
+<p>Jedną z największych zalet Pythona jest jego modularność. Podstawowy Python zawiera tylko napotrzebniejsze funkcje, natomiast jego możliwości są znacznie rozszerzone poprzez <em>moduły</em>. Moduł to nic innego jak zbiór funkcji służących do realizacji określonych czynności. Wiele modułów dostępnych jest razem z podstawową instalacją Pythona (<a class="reference external" href="https://docs.python.org/3/py-modindex.html">https://docs.python.org/3/py-modindex.html</a>), jeszcze więcej zanistalowanych jest domyślnie wraz z Anacondą (<a class="reference external" href="https://docs.anaconda.com/anaconda/packages/old-pkg-lists/4.3.1/py35/">https://docs.anaconda.com/anaconda/packages/old-pkg-lists/4.3.1/py35/</a>). Możesz też instalować dodatkowe moduły poprzez Anacondę (<a class="reference external" href="https://conda.io/docs/user-guide/tasks/manage-pkgs.html">https://conda.io/docs/user-guide/tasks/manage-pkgs.html</a>).</p>
+<div class="section" id="modul-pandas">
+<h2>Moduł <code class="docutils literal notranslate"><span class="pre">pandas</span></code><a class="headerlink" href="#modul-pandas" title="Permalink to this headline">¶</a></h2>
+<p>Jeżeli dany moduł jest zainstalowany na twoim komputerze, musisz go zaimportować zanim skorzystasz z jego funkcji. Zaimportujemy teraz moduł, który służy do analizy danych w Pythonie. Aby zaimportować moduł stosujemy słowo kluczowe <code class="docutils literal notranslate"><span class="pre">import</span></code> i nazwę modułu. Aby uniknąć konfliktów w nazwach funkcji najczęściej podajemy też krótką nazwę (alias), po której identyfikować będziemy funkcje z danego modułu. Zwyczajowo dla <code class="docutils literal notranslate"><span class="pre">pandas</span></code> jest to <code class="docutils literal notranslate"><span class="pre">pd</span></code>. Całość wygląda tak:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dzięki tej linijce zaimportowane i dostępne są wszystkie funkcje odstępne w module <code class="docutils literal notranslate"><span class="pre">pandas</span></code>. Żeby z nich skorzystać, musimy ich nazwy poprzedzić prefiksem <code class="docutils literal notranslate"><span class="pre">pd.</span></code>. Skorzystamy teraz z funkcji <code class="docutils literal notranslate"><span class="pre">read_csv</span></code>, która otwiera plik <code class="docutils literal notranslate"><span class="pre">csv</span></code> znajdujący się na dysku, odczytuje go i umieszcza w czymś, co nazywa się <code class="docutils literal notranslate"><span class="pre">pandas</span> <span class="pre">dataframe</span></code> - strukturze służącej do przechowywania danych w formie tabel. Załadujemy plik <code class="docutils literal notranslate"><span class="pre">movies.csv</span></code> dostępny w repo przedmiotu w folderze <code class="docutils literal notranslate"><span class="pre">data/drugs</span></code>. W pliku tym znajdują się dane dotyczące spożycia substancji psychoaktywnych u ludzi w różnym wieku. Poniżej znajdziesz opis zmiennych w tym pliku (dostępny też w <code class="docutils literal notranslate"><span class="pre">README.md</span></code> w katalogu <code class="docutils literal notranslate"><span class="pre">drugs</span></code>).</p>
+</div>
+<div class="section" id="drug-use-by-age">
+<h2>Drug Use By Age<a class="headerlink" href="#drug-use-by-age" title="Permalink to this headline">¶</a></h2>
+<p>This directory contains data behind the story <a class="reference external" href="http://fivethirtyeight.com/datalab/how-baby-boomers-get-high/">How Baby Boomers Get High</a>. It covers 13 drugs across 17 age groups.</p>
+<p>Source: <a class="reference external" href="http://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/index.html">National Survey on Drug Use and Health from the Substance Abuse and Mental Health Data Archive</a>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Header</p></th>
+<th class="head"><p>Definition</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">alcohol-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used alcohol in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">alcohol-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used alcohol in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">marijuana-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used marijuana in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">marijuana-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used marijuana in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">cocaine-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used cocaine in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">cocaine-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used cocaine in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">crack-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used crack in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">crack-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used crack in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">heroin-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used heroin in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">heroin-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used heroin in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">hallucinogen-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used hallucinogens in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hallucinogen-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used hallucinogens in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">inhalant-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used inhalants in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">inhalant-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used inhalants in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pain-releiver-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used pain relievers in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pain-releiver-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used pain relievers in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">oxycontin-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used oxycontin in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">oxycontin-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used oxycontin in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tranquilizer-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used tranquilizer in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tranquilizer-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used tranquilizer in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">stimulant-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used stimulants in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">stimulant-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used stimulants in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">meth-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used meth in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">meth-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used meth in the past 12 months</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sedative-use</span></code></p></td>
+<td><p>Percentage of those in an age group who used sedatives in the past 12 months</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">sedative-frequency</span></code></p></td>
+<td><p>Median number of times a user in an age group used sedatives in the past 12 months</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="import">
+<h2>Import<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/drugs/drugs.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="rozne-sposoby-pokazywania-df">
+<h2>Różne sposoby pokazywania <code class="docutils literal notranslate"><span class="pre">df</span></code><a class="headerlink" href="#rozne-sposoby-pokazywania-df" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>n</th>
+      <th>alcohol-use</th>
+      <th>alcohol-frequency</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+      <th>...</th>
+      <th>oxycontin-use</th>
+      <th>oxycontin-frequency</th>
+      <th>tranquilizer-use</th>
+      <th>tranquilizer-frequency</th>
+      <th>stimulant-use</th>
+      <th>stimulant-frequency</th>
+      <th>meth-use</th>
+      <th>meth-frequency</th>
+      <th>sedative-use</th>
+      <th>sedative-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12</td>
+      <td>2798</td>
+      <td>3.9</td>
+      <td>3.0</td>
+      <td>1.1</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.1</td>
+      <td>24.5</td>
+      <td>0.2</td>
+      <td>52.0</td>
+      <td>0.2</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>13</td>
+      <td>2757</td>
+      <td>8.5</td>
+      <td>6.0</td>
+      <td>3.4</td>
+      <td>15.0</td>
+      <td>0.1</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>0.1</td>
+      <td>41.0</td>
+      <td>0.3</td>
+      <td>25.5</td>
+      <td>0.3</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.1</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>2792</td>
+      <td>18.1</td>
+      <td>5.0</td>
+      <td>8.7</td>
+      <td>24.0</td>
+      <td>0.1</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>4.5</td>
+      <td>0.9</td>
+      <td>5.0</td>
+      <td>0.8</td>
+      <td>12.0</td>
+      <td>0.1</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15</td>
+      <td>2956</td>
+      <td>29.2</td>
+      <td>6.0</td>
+      <td>14.5</td>
+      <td>25.0</td>
+      <td>0.5</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>9.5</td>
+      <td>...</td>
+      <td>0.8</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>4.5</td>
+      <td>1.5</td>
+      <td>6.0</td>
+      <td>0.3</td>
+      <td>10.5</td>
+      <td>0.4</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16</td>
+      <td>3058</td>
+      <td>40.1</td>
+      <td>10.0</td>
+      <td>22.5</td>
+      <td>30.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>1.1</td>
+      <td>4.0</td>
+      <td>2.4</td>
+      <td>11.0</td>
+      <td>1.8</td>
+      <td>9.5</td>
+      <td>0.3</td>
+      <td>36.0</td>
+      <td>0.2</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>17</td>
+      <td>3038</td>
+      <td>49.3</td>
+      <td>13.0</td>
+      <td>28.0</td>
+      <td>36.0</td>
+      <td>2.0</td>
+      <td>5.0</td>
+      <td>0.1</td>
+      <td>21.0</td>
+      <td>...</td>
+      <td>1.4</td>
+      <td>6.0</td>
+      <td>3.5</td>
+      <td>7.0</td>
+      <td>2.8</td>
+      <td>9.0</td>
+      <td>0.6</td>
+      <td>48.0</td>
+      <td>0.5</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>18</td>
+      <td>2469</td>
+      <td>58.7</td>
+      <td>24.0</td>
+      <td>33.7</td>
+      <td>52.0</td>
+      <td>3.2</td>
+      <td>5.0</td>
+      <td>0.4</td>
+      <td>10.0</td>
+      <td>...</td>
+      <td>1.7</td>
+      <td>7.0</td>
+      <td>4.9</td>
+      <td>12.0</td>
+      <td>3.0</td>
+      <td>8.0</td>
+      <td>0.5</td>
+      <td>12.0</td>
+      <td>0.4</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>19</td>
+      <td>2223</td>
+      <td>64.6</td>
+      <td>36.0</td>
+      <td>33.4</td>
+      <td>60.0</td>
+      <td>4.1</td>
+      <td>5.5</td>
+      <td>0.5</td>
+      <td>2.0</td>
+      <td>...</td>
+      <td>1.5</td>
+      <td>7.5</td>
+      <td>4.2</td>
+      <td>4.5</td>
+      <td>3.3</td>
+      <td>6.0</td>
+      <td>0.4</td>
+      <td>105.0</td>
+      <td>0.3</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20</td>
+      <td>2271</td>
+      <td>69.7</td>
+      <td>48.0</td>
+      <td>34.0</td>
+      <td>60.0</td>
+      <td>4.9</td>
+      <td>8.0</td>
+      <td>0.6</td>
+      <td>5.0</td>
+      <td>...</td>
+      <td>1.7</td>
+      <td>12.0</td>
+      <td>5.4</td>
+      <td>10.0</td>
+      <td>4.0</td>
+      <td>12.0</td>
+      <td>0.9</td>
+      <td>12.0</td>
+      <td>0.5</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>21</td>
+      <td>2354</td>
+      <td>83.2</td>
+      <td>52.0</td>
+      <td>33.0</td>
+      <td>52.0</td>
+      <td>4.8</td>
+      <td>5.0</td>
+      <td>0.5</td>
+      <td>17.0</td>
+      <td>...</td>
+      <td>1.3</td>
+      <td>13.5</td>
+      <td>3.9</td>
+      <td>7.0</td>
+      <td>4.1</td>
+      <td>10.0</td>
+      <td>0.6</td>
+      <td>2.0</td>
+      <td>0.3</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>22-23</td>
+      <td>4707</td>
+      <td>84.2</td>
+      <td>52.0</td>
+      <td>28.4</td>
+      <td>52.0</td>
+      <td>4.5</td>
+      <td>5.0</td>
+      <td>0.5</td>
+      <td>5.0</td>
+      <td>...</td>
+      <td>1.7</td>
+      <td>17.5</td>
+      <td>4.4</td>
+      <td>12.0</td>
+      <td>3.6</td>
+      <td>10.0</td>
+      <td>0.6</td>
+      <td>46.0</td>
+      <td>0.2</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>24-25</td>
+      <td>4591</td>
+      <td>83.1</td>
+      <td>52.0</td>
+      <td>24.9</td>
+      <td>60.0</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>0.5</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>1.3</td>
+      <td>20.0</td>
+      <td>4.3</td>
+      <td>10.0</td>
+      <td>2.6</td>
+      <td>10.0</td>
+      <td>0.7</td>
+      <td>21.0</td>
+      <td>0.2</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>26-29</td>
+      <td>2628</td>
+      <td>80.7</td>
+      <td>52.0</td>
+      <td>20.8</td>
+      <td>52.0</td>
+      <td>3.2</td>
+      <td>5.0</td>
+      <td>0.4</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>1.2</td>
+      <td>13.5</td>
+      <td>4.2</td>
+      <td>10.0</td>
+      <td>2.3</td>
+      <td>7.0</td>
+      <td>0.6</td>
+      <td>30.0</td>
+      <td>0.4</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>30-34</td>
+      <td>2864</td>
+      <td>77.5</td>
+      <td>52.0</td>
+      <td>16.4</td>
+      <td>72.0</td>
+      <td>2.1</td>
+      <td>8.0</td>
+      <td>0.5</td>
+      <td>15.0</td>
+      <td>...</td>
+      <td>0.9</td>
+      <td>46.0</td>
+      <td>3.6</td>
+      <td>8.0</td>
+      <td>1.4</td>
+      <td>12.0</td>
+      <td>0.4</td>
+      <td>54.0</td>
+      <td>0.4</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>35-49</td>
+      <td>7391</td>
+      <td>75.0</td>
+      <td>52.0</td>
+      <td>10.4</td>
+      <td>48.0</td>
+      <td>1.5</td>
+      <td>15.0</td>
+      <td>0.5</td>
+      <td>48.0</td>
+      <td>...</td>
+      <td>0.3</td>
+      <td>12.0</td>
+      <td>1.9</td>
+      <td>6.0</td>
+      <td>0.6</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+      <td>0.3</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>50-64</td>
+      <td>3923</td>
+      <td>67.2</td>
+      <td>52.0</td>
+      <td>7.3</td>
+      <td>52.0</td>
+      <td>0.9</td>
+      <td>36.0</td>
+      <td>0.4</td>
+      <td>62.0</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>5.0</td>
+      <td>1.4</td>
+      <td>10.0</td>
+      <td>0.3</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>30.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>65+</td>
+      <td>2448</td>
+      <td>49.3</td>
+      <td>52.0</td>
+      <td>1.2</td>
+      <td>36.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>364.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>15.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>17 rows × 28 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>n</th>
+      <th>alcohol-use</th>
+      <th>alcohol-frequency</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+      <th>...</th>
+      <th>oxycontin-use</th>
+      <th>oxycontin-frequency</th>
+      <th>tranquilizer-use</th>
+      <th>tranquilizer-frequency</th>
+      <th>stimulant-use</th>
+      <th>stimulant-frequency</th>
+      <th>meth-use</th>
+      <th>meth-frequency</th>
+      <th>sedative-use</th>
+      <th>sedative-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12</td>
+      <td>2798</td>
+      <td>3.9</td>
+      <td>3.0</td>
+      <td>1.1</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.1</td>
+      <td>24.5</td>
+      <td>0.2</td>
+      <td>52.0</td>
+      <td>0.2</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>13</td>
+      <td>2757</td>
+      <td>8.5</td>
+      <td>6.0</td>
+      <td>3.4</td>
+      <td>15.0</td>
+      <td>0.1</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>0.1</td>
+      <td>41.0</td>
+      <td>0.3</td>
+      <td>25.5</td>
+      <td>0.3</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.1</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>2792</td>
+      <td>18.1</td>
+      <td>5.0</td>
+      <td>8.7</td>
+      <td>24.0</td>
+      <td>0.1</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>4.5</td>
+      <td>0.9</td>
+      <td>5.0</td>
+      <td>0.8</td>
+      <td>12.0</td>
+      <td>0.1</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15</td>
+      <td>2956</td>
+      <td>29.2</td>
+      <td>6.0</td>
+      <td>14.5</td>
+      <td>25.0</td>
+      <td>0.5</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>9.5</td>
+      <td>...</td>
+      <td>0.8</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>4.5</td>
+      <td>1.5</td>
+      <td>6.0</td>
+      <td>0.3</td>
+      <td>10.5</td>
+      <td>0.4</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16</td>
+      <td>3058</td>
+      <td>40.1</td>
+      <td>10.0</td>
+      <td>22.5</td>
+      <td>30.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>1.1</td>
+      <td>4.0</td>
+      <td>2.4</td>
+      <td>11.0</td>
+      <td>1.8</td>
+      <td>9.5</td>
+      <td>0.3</td>
+      <td>36.0</td>
+      <td>0.2</td>
+      <td>3.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 28 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>n</th>
+      <th>alcohol-use</th>
+      <th>alcohol-frequency</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+      <th>...</th>
+      <th>oxycontin-use</th>
+      <th>oxycontin-frequency</th>
+      <th>tranquilizer-use</th>
+      <th>tranquilizer-frequency</th>
+      <th>stimulant-use</th>
+      <th>stimulant-frequency</th>
+      <th>meth-use</th>
+      <th>meth-frequency</th>
+      <th>sedative-use</th>
+      <th>sedative-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12</th>
+      <td>26-29</td>
+      <td>2628</td>
+      <td>80.7</td>
+      <td>52.0</td>
+      <td>20.8</td>
+      <td>52.0</td>
+      <td>3.2</td>
+      <td>5.0</td>
+      <td>0.4</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>1.2</td>
+      <td>13.5</td>
+      <td>4.2</td>
+      <td>10.0</td>
+      <td>2.3</td>
+      <td>7.0</td>
+      <td>0.6</td>
+      <td>30.0</td>
+      <td>0.4</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>30-34</td>
+      <td>2864</td>
+      <td>77.5</td>
+      <td>52.0</td>
+      <td>16.4</td>
+      <td>72.0</td>
+      <td>2.1</td>
+      <td>8.0</td>
+      <td>0.5</td>
+      <td>15.0</td>
+      <td>...</td>
+      <td>0.9</td>
+      <td>46.0</td>
+      <td>3.6</td>
+      <td>8.0</td>
+      <td>1.4</td>
+      <td>12.0</td>
+      <td>0.4</td>
+      <td>54.0</td>
+      <td>0.4</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>35-49</td>
+      <td>7391</td>
+      <td>75.0</td>
+      <td>52.0</td>
+      <td>10.4</td>
+      <td>48.0</td>
+      <td>1.5</td>
+      <td>15.0</td>
+      <td>0.5</td>
+      <td>48.0</td>
+      <td>...</td>
+      <td>0.3</td>
+      <td>12.0</td>
+      <td>1.9</td>
+      <td>6.0</td>
+      <td>0.6</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+      <td>0.3</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>50-64</td>
+      <td>3923</td>
+      <td>67.2</td>
+      <td>52.0</td>
+      <td>7.3</td>
+      <td>52.0</td>
+      <td>0.9</td>
+      <td>36.0</td>
+      <td>0.4</td>
+      <td>62.0</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>5.0</td>
+      <td>1.4</td>
+      <td>10.0</td>
+      <td>0.3</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>30.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>65+</td>
+      <td>2448</td>
+      <td>49.3</td>
+      <td>52.0</td>
+      <td>1.2</td>
+      <td>36.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>364.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>15.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 28 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 17 entries, 0 to 16
+Data columns (total 28 columns):
+age                        17 non-null object
+n                          17 non-null int64
+alcohol-use                17 non-null float64
+alcohol-frequency          17 non-null float64
+marijuana-use              17 non-null float64
+marijuana-frequency        17 non-null float64
+cocaine-use                17 non-null float64
+cocaine-frequency          16 non-null float64
+crack-use                  17 non-null float64
+crack-frequency            14 non-null float64
+heroin-use                 17 non-null float64
+heroin-frequency           16 non-null float64
+hallucinogen-use           17 non-null float64
+hallucinogen-frequency     17 non-null float64
+inhalant-use               17 non-null float64
+inhalant-frequency         16 non-null float64
+pain-releiver-use          17 non-null float64
+pain-releiver-frequency    17 non-null float64
+oxycontin-use              17 non-null float64
+oxycontin-frequency        16 non-null float64
+tranquilizer-use           17 non-null float64
+tranquilizer-frequency     17 non-null float64
+stimulant-use              17 non-null float64
+stimulant-frequency        17 non-null float64
+meth-use                   17 non-null float64
+meth-frequency             15 non-null float64
+sedative-use               17 non-null float64
+sedative-frequency         17 non-null float64
+dtypes: float64(26), int64(1), object(1)
+memory usage: 3.8+ KB
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="wybieranie-poszczegolnych-kolumn">
+<h2>Wybieranie poszczególnych kolumn<a class="headerlink" href="#wybieranie-poszczegolnych-kolumn" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        12
+1        13
+2        14
+3        15
+4        16
+5        17
+6        18
+7        19
+8        20
+9        21
+10    22-23
+11    24-25
+12    26-29
+13    30-34
+14    35-49
+15    50-64
+16      65+
+Name: age, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="s1">&#39;alcohol-frequency&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      3.0
+1      6.0
+2      5.0
+3      6.0
+4     10.0
+5     13.0
+6     24.0
+7     36.0
+8     48.0
+9     52.0
+10    52.0
+11    52.0
+12    52.0
+13    52.0
+14    52.0
+15    52.0
+16    52.0
+Name: alcohol-frequency, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;marijuana-use&#39;</span><span class="p">,</span> <span class="s1">&#39;marijuana-frequency&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12</td>
+      <td>1.1</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>13</td>
+      <td>3.4</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>8.7</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15</td>
+      <td>14.5</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16</td>
+      <td>22.5</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>17</td>
+      <td>28.0</td>
+      <td>36.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>18</td>
+      <td>33.7</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>19</td>
+      <td>33.4</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20</td>
+      <td>34.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>21</td>
+      <td>33.0</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>22-23</td>
+      <td>28.4</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>24-25</td>
+      <td>24.9</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>26-29</td>
+      <td>20.8</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>30-34</td>
+      <td>16.4</td>
+      <td>72.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>35-49</td>
+      <td>10.4</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>50-64</td>
+      <td>7.3</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>65+</td>
+      <td>1.2</td>
+      <td>36.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="wybieranie-wierszy">
+<h2>Wybieranie wierszy<a class="headerlink" href="#wybieranie-wierszy" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>n</th>
+      <th>alcohol-use</th>
+      <th>alcohol-frequency</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+      <th>...</th>
+      <th>oxycontin-use</th>
+      <th>oxycontin-frequency</th>
+      <th>tranquilizer-use</th>
+      <th>tranquilizer-frequency</th>
+      <th>stimulant-use</th>
+      <th>stimulant-frequency</th>
+      <th>meth-use</th>
+      <th>meth-frequency</th>
+      <th>sedative-use</th>
+      <th>sedative-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>12</td>
+      <td>2798</td>
+      <td>3.9</td>
+      <td>3.0</td>
+      <td>1.1</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.1</td>
+      <td>24.5</td>
+      <td>0.2</td>
+      <td>52.0</td>
+      <td>0.2</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>13</td>
+      <td>2757</td>
+      <td>8.5</td>
+      <td>6.0</td>
+      <td>3.4</td>
+      <td>15.0</td>
+      <td>0.1</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>...</td>
+      <td>0.1</td>
+      <td>41.0</td>
+      <td>0.3</td>
+      <td>25.5</td>
+      <td>0.3</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.1</td>
+      <td>19.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>2792</td>
+      <td>18.1</td>
+      <td>5.0</td>
+      <td>8.7</td>
+      <td>24.0</td>
+      <td>0.1</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>4.5</td>
+      <td>0.9</td>
+      <td>5.0</td>
+      <td>0.8</td>
+      <td>12.0</td>
+      <td>0.1</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>15</td>
+      <td>2956</td>
+      <td>29.2</td>
+      <td>6.0</td>
+      <td>14.5</td>
+      <td>25.0</td>
+      <td>0.5</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>9.5</td>
+      <td>...</td>
+      <td>0.8</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>4.5</td>
+      <td>1.5</td>
+      <td>6.0</td>
+      <td>0.3</td>
+      <td>10.5</td>
+      <td>0.4</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16</td>
+      <td>3058</td>
+      <td>40.1</td>
+      <td>10.0</td>
+      <td>22.5</td>
+      <td>30.0</td>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>...</td>
+      <td>1.1</td>
+      <td>4.0</td>
+      <td>2.4</td>
+      <td>11.0</td>
+      <td>1.8</td>
+      <td>9.5</td>
+      <td>0.3</td>
+      <td>36.0</td>
+      <td>0.2</td>
+      <td>3.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 28 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="mi">10</span><span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>n</th>
+      <th>alcohol-use</th>
+      <th>alcohol-frequency</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+      <th>...</th>
+      <th>oxycontin-use</th>
+      <th>oxycontin-frequency</th>
+      <th>tranquilizer-use</th>
+      <th>tranquilizer-frequency</th>
+      <th>stimulant-use</th>
+      <th>stimulant-frequency</th>
+      <th>meth-use</th>
+      <th>meth-frequency</th>
+      <th>sedative-use</th>
+      <th>sedative-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>22-23</td>
+      <td>4707</td>
+      <td>84.2</td>
+      <td>52.0</td>
+      <td>28.4</td>
+      <td>52.0</td>
+      <td>4.5</td>
+      <td>5.0</td>
+      <td>0.5</td>
+      <td>5.0</td>
+      <td>...</td>
+      <td>1.7</td>
+      <td>17.5</td>
+      <td>4.4</td>
+      <td>12.0</td>
+      <td>3.6</td>
+      <td>10.0</td>
+      <td>0.6</td>
+      <td>46.0</td>
+      <td>0.2</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>24-25</td>
+      <td>4591</td>
+      <td>83.1</td>
+      <td>52.0</td>
+      <td>24.9</td>
+      <td>60.0</td>
+      <td>4.0</td>
+      <td>6.0</td>
+      <td>0.5</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>1.3</td>
+      <td>20.0</td>
+      <td>4.3</td>
+      <td>10.0</td>
+      <td>2.6</td>
+      <td>10.0</td>
+      <td>0.7</td>
+      <td>21.0</td>
+      <td>0.2</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>26-29</td>
+      <td>2628</td>
+      <td>80.7</td>
+      <td>52.0</td>
+      <td>20.8</td>
+      <td>52.0</td>
+      <td>3.2</td>
+      <td>5.0</td>
+      <td>0.4</td>
+      <td>6.0</td>
+      <td>...</td>
+      <td>1.2</td>
+      <td>13.5</td>
+      <td>4.2</td>
+      <td>10.0</td>
+      <td>2.3</td>
+      <td>7.0</td>
+      <td>0.6</td>
+      <td>30.0</td>
+      <td>0.4</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>30-34</td>
+      <td>2864</td>
+      <td>77.5</td>
+      <td>52.0</td>
+      <td>16.4</td>
+      <td>72.0</td>
+      <td>2.1</td>
+      <td>8.0</td>
+      <td>0.5</td>
+      <td>15.0</td>
+      <td>...</td>
+      <td>0.9</td>
+      <td>46.0</td>
+      <td>3.6</td>
+      <td>8.0</td>
+      <td>1.4</td>
+      <td>12.0</td>
+      <td>0.4</td>
+      <td>54.0</td>
+      <td>0.4</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>35-49</td>
+      <td>7391</td>
+      <td>75.0</td>
+      <td>52.0</td>
+      <td>10.4</td>
+      <td>48.0</td>
+      <td>1.5</td>
+      <td>15.0</td>
+      <td>0.5</td>
+      <td>48.0</td>
+      <td>...</td>
+      <td>0.3</td>
+      <td>12.0</td>
+      <td>1.9</td>
+      <td>6.0</td>
+      <td>0.6</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+      <td>0.3</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>50-64</td>
+      <td>3923</td>
+      <td>67.2</td>
+      <td>52.0</td>
+      <td>7.3</td>
+      <td>52.0</td>
+      <td>0.9</td>
+      <td>36.0</td>
+      <td>0.4</td>
+      <td>62.0</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>5.0</td>
+      <td>1.4</td>
+      <td>10.0</td>
+      <td>0.3</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>30.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>65+</td>
+      <td>2448</td>
+      <td>49.3</td>
+      <td>52.0</td>
+      <td>1.2</td>
+      <td>36.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>364.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>15.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>7 rows × 28 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>n</th>
+      <th>alcohol-use</th>
+      <th>alcohol-frequency</th>
+      <th>marijuana-use</th>
+      <th>marijuana-frequency</th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+      <th>...</th>
+      <th>oxycontin-use</th>
+      <th>oxycontin-frequency</th>
+      <th>tranquilizer-use</th>
+      <th>tranquilizer-frequency</th>
+      <th>stimulant-use</th>
+      <th>stimulant-frequency</th>
+      <th>meth-use</th>
+      <th>meth-frequency</th>
+      <th>sedative-use</th>
+      <th>sedative-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>14</th>
+      <td>35-49</td>
+      <td>7391</td>
+      <td>75.0</td>
+      <td>52.0</td>
+      <td>10.4</td>
+      <td>48.0</td>
+      <td>1.5</td>
+      <td>15.0</td>
+      <td>0.5</td>
+      <td>48.0</td>
+      <td>...</td>
+      <td>0.3</td>
+      <td>12.0</td>
+      <td>1.9</td>
+      <td>6.0</td>
+      <td>0.6</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+      <td>0.3</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>50-64</td>
+      <td>3923</td>
+      <td>67.2</td>
+      <td>52.0</td>
+      <td>7.3</td>
+      <td>52.0</td>
+      <td>0.9</td>
+      <td>36.0</td>
+      <td>0.4</td>
+      <td>62.0</td>
+      <td>...</td>
+      <td>0.4</td>
+      <td>5.0</td>
+      <td>1.4</td>
+      <td>10.0</td>
+      <td>0.3</td>
+      <td>24.0</td>
+      <td>0.2</td>
+      <td>30.0</td>
+      <td>0.2</td>
+      <td>104.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>65+</td>
+      <td>2448</td>
+      <td>49.3</td>
+      <td>52.0</td>
+      <td>1.2</td>
+      <td>36.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.2</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>364.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>15.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 28 columns</p>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="loc">
+<h2><code class="docutils literal notranslate"><span class="pre">loc</span></code><a class="headerlink" href="#loc" title="Permalink to this headline">¶</a></h2>
+<p>Lokalizowanie po etykiecie. Wprowadź dwie listy rozdzielone przecinkiem. Pierwsze rzędy, drugie kolumny.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;cocaine-use&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>cocaine-use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>18</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>19</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>20</td>
+      <td>4.9</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>age                          20
+n                          2271
+alcohol-use                69.7
+alcohol-frequency            48
+marijuana-use                34
+marijuana-frequency          60
+cocaine-use                 4.9
+cocaine-frequency             8
+crack-use                   0.6
+crack-frequency               5
+heroin-use                  0.9
+heroin-frequency             45
+hallucinogen-use            7.4
+hallucinogen-frequency        2
+inhalant-use                1.5
+inhalant-frequency            4
+pain-releiver-use            10
+pain-releiver-frequency      10
+oxycontin-use               1.7
+oxycontin-frequency          12
+tranquilizer-use            5.4
+tranquilizer-frequency       10
+stimulant-use                 4
+stimulant-frequency          12
+meth-use                    0.9
+meth-frequency               12
+sedative-use                0.5
+sedative-frequency            4
+Name: 8, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="iloc">
+<h2><code class="docutils literal notranslate"><span class="pre">iloc</span></code><a class="headerlink" href="#iloc" title="Permalink to this headline">¶</a></h2>
+<p>Lokalizowanie po indeksach. Tak samo jak poprzednio, wprowadź dwie listy rozdzielone przecinkiem. Pierwsze rzędy, drugie kolumny.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>cocaine-use</th>
+      <th>cocaine-frequency</th>
+      <th>crack-use</th>
+      <th>crack-frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.1</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.1</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.1</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.5</td>
+      <td>4.0</td>
+      <td>0.1</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.0</td>
+      <td>7.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">2</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>alcohol-use</th>
+      <th>marijuana-use</th>
+      <th>cocaine-use</th>
+      <th>crack-use</th>
+      <th>heroin-use</th>
+      <th>hallucinogen-use</th>
+      <th>inhalant-use</th>
+      <th>pain-releiver-use</th>
+      <th>oxycontin-use</th>
+      <th>tranquilizer-use</th>
+      <th>stimulant-use</th>
+      <th>meth-use</th>
+      <th>sedative-use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>8.5</td>
+      <td>3.4</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.6</td>
+      <td>2.5</td>
+      <td>2.4</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>0.3</td>
+      <td>0.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>29.2</td>
+      <td>14.5</td>
+      <td>0.5</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>2.1</td>
+      <td>2.5</td>
+      <td>5.5</td>
+      <td>0.8</td>
+      <td>2.0</td>
+      <td>1.5</td>
+      <td>0.3</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>69.7</td>
+      <td>34.0</td>
+      <td>4.9</td>
+      <td>0.6</td>
+      <td>0.9</td>
+      <td>7.4</td>
+      <td>1.5</td>
+      <td>10.0</td>
+      <td>1.7</td>
+      <td>5.4</td>
+      <td>4.0</td>
+      <td>0.9</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="proste-statystyki">
+<h2>Proste statystyki<a class="headerlink" href="#proste-statystyki" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>55268
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="p">[</span><span class="s1">&#39;marijuana-use&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>34.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">drugs</span><span class="p">[</span><span class="s1">&#39;marijuana-frequency&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(),</span> <span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>age                          20
+n                          2271
+alcohol-use                69.7
+alcohol-frequency            48
+marijuana-use                34
+marijuana-frequency          60
+cocaine-use                 4.9
+cocaine-frequency             8
+crack-use                   0.6
+crack-frequency               5
+heroin-use                  0.9
+heroin-frequency             45
+hallucinogen-use            7.4
+hallucinogen-frequency        2
+inhalant-use                1.5
+inhalant-frequency            4
+pain-releiver-use            10
+pain-releiver-frequency      10
+oxycontin-use               1.7
+oxycontin-frequency          12
+tranquilizer-use            5.4
+tranquilizer-frequency       10
+stimulant-use                 4
+stimulant-frequency          12
+meth-use                    0.9
+meth-frequency               12
+sedative-use                0.5
+sedative-frequency            4
+Name: 8, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">drugs</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">drugs</span><span class="p">[</span><span class="s1">&#39;alcohol-frequency&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(),</span> <span class="p">:]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>age                          21
+n                          2354
+alcohol-use                83.2
+alcohol-frequency            52
+marijuana-use                33
+marijuana-frequency          52
+cocaine-use                 4.8
+cocaine-frequency             5
+crack-use                   0.5
+crack-frequency              17
+heroin-use                  0.6
+heroin-frequency             30
+hallucinogen-use            6.3
+hallucinogen-frequency        4
+inhalant-use                1.4
+inhalant-frequency            2
+pain-releiver-use             9
+pain-releiver-frequency      15
+oxycontin-use               1.3
+oxycontin-frequency        13.5
+tranquilizer-use            3.9
+tranquilizer-frequency        7
+stimulant-use               4.1
+stimulant-frequency          10
+meth-use                    0.6
+meth-frequency                2
+sedative-use                0.3
+sedative-frequency            9
+Name: 9, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="funkcje.html" title="previous page">Funkcje</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

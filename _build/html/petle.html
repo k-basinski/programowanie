@@ -1,0 +1,859 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pętle &#8212; Programowanie</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Funkcje" href="funkcje.html" />
+    <link rel="prev" title="Instrukcje warunkowe" href="ify.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Programowanie</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="wstep.html">
+   Wstęp
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Kurs podstawowy
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="narzedzia.html">
+   Narzędzia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html#alt-h1">
+   Alt-H1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="zmienne.html">
+   Twój pierwszy program
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="operatory.html">
+   Operatory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="listy.html">
+   Listy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ify.html">
+   Instrukcje warunkowe
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Pętle
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Kurs zaawansowany
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="funkcje.html">
+   Funkcje
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="moduly.html">
+   Moduły
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/petle.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/petle.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#petla-while">
+   Pętla
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     while
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#petla-for">
+   Pętla
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     for
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#petla-for-a-stringi">
+   Pętla
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     for
+    </span>
+   </code>
+   a stringi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#czytanie-danych-z-pliku">
+   Czytanie danych z pliku
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#czytanie-danych-z-plikow-moduly">
+   Czytanie danych z plików, moduły
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="petle">
+<h1>Pętle<a class="headerlink" href="#petle" title="Permalink to this headline">¶</a></h1>
+<p>Czasem chcielibyśmy, aby nasz program wykonał jakąś rzecz kilka razy. Być może chcielibyśmy wykonać jakiś fragment kodu tak długo, aż jakiś warunek jest spełniony. W innych sytuacjach chcielibyśmy wykonać jakąś skomplikowaną operację na wszystkich elementach listy. Jak to zrobić? Do tego właśnie służą pętle.</p>
+<div class="section" id="petla-while">
+<h2>Pętla <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#petla-while" title="Permalink to this headline">¶</a></h2>
+<p>Najprostszym rodzajem pętli w Pythonie jest pętla <code class="docutils literal notranslate"><span class="pre">while</span></code>. Pętla ta wykonuje jakiś blok kodu do momentu, w którym wartość logiczna wyrażenia rozpoczynającego pętlę stanie się fałszywa. Na przykład:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">liczba</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">liczba</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">liczba</span><span class="p">)</span>
+    <span class="n">liczba</span> <span class="o">=</span> <span class="n">liczba</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jak widać, jest to bardzo podobne do instrukcji <code class="docutils literal notranslate"><span class="pre">if</span></code>. Tym razem jednak zamiast wykonywać coś raz, dany blok kodu wykonuje się tak długo, aż warunek umieszczony u góry pętli stanie się fałszywy. Inny przykład:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">haslo</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Podaj hasło!&quot;</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">haslo</span> <span class="o">!=</span> <span class="s1">&#39;koniec&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Wpisałeś złe hasło&#39;</span><span class="p">)</span>
+    <span class="n">haslo</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Podaj hasło!&#39;</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Podałeś dobre hasło. Teraz dam Ci spokój.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! aoe
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wpisałeś złe hasło
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! fea
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wpisałeś złe hasło
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! aef
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wpisałeś złe hasło
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! ii
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wpisałeś złe hasło
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! eafs
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wpisałeś złe hasło
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Wpisałeś złe hasło
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podaj hasło! koniec
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podałeś dobre hasło. Teraz dam Ci spokój.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ten lekko głupawy programik domaga się podania hasła w pierwszej linijce. Hasło podane przez użytkownika umieszczane jest w zmiennej <code class="docutils literal notranslate"><span class="pre">haslo</span></code>. W pętli <code class="docutils literal notranslate"><span class="pre">while</span></code> sprawdzany jest warunek <code class="docutils literal notranslate"><span class="pre">haslo</span> <span class="pre">!=</span> <span class="pre">'koniec'</span></code>. Pętla będzie “kręcić się” aż do momentu, w którym użytkownik nie wpiszę słowa <em>koniec</em>. Wtedy dopiero warunek pętli zmieni wartość logiczną na <code class="docutils literal notranslate"><span class="pre">False</span></code> i pętla się zakończy.</p>
+<p>Uwaga! Pętlą <code class="docutils literal notranslate"><span class="pre">while</span></code> bardzo łatwo jest zawiesić Pythona! Jeśli przez przypadek zrobisz nieskończoną pętlę, przerwij działanie Pythona poprzez komendę <em>kernel -&gt; restart kernel</em> z menu górnego.</p>
+</div>
+<div class="section" id="petla-for">
+<h2>Pętla <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#petla-for" title="Permalink to this headline">¶</a></h2>
+<p>Innym rodzajem pętli dostępnym w Pythonie jest pętla <code class="docutils literal notranslate"><span class="pre">for</span></code>. Pętla ta służy do przeglądania zawartości list (i innych <em>iterowalnych</em> obiektów o których nie będziemy się uczyć na tym kursie). Zanalizuj ten prosty przykład:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imiona</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ania&#39;</span><span class="p">,</span> <span class="s1">&#39;Basia&#39;</span><span class="p">,</span> <span class="s1">&#39;Kasia&#39;</span><span class="p">,</span> <span class="s1">&#39;Zosia&#39;</span><span class="p">,</span> <span class="s1">&#39;Czesia&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">imiona</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ania
+Basia
+Kasia
+Zosia
+Czesia
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jak to działa? Najpierw deklarujemy listę złożoną z pięciu imion. Następnie pętla <code class="docutils literal notranslate"><span class="pre">for</span></code> “zagląda” do każdego z elementów listy po kolei i umieszcza wartość tego elementu w zmiennej <code class="docutils literal notranslate"><span class="pre">i</span></code>. Teraz mogę wykonać dowolne operację na każdym z elementów listy, ponieważ mam do niego dostęp poprzez zmienną <code class="docutils literal notranslate"><span class="pre">i</span></code>.</p>
+<p>Na marginesie: zmienna w pętli <code class="docutils literal notranslate"><span class="pre">for</span></code>, która przegląda zawartość listy to zwyczajowo <code class="docutils literal notranslate"><span class="pre">i</span></code>, ale może to być dowolna nazwa. Poniższy program robi dokładnie to samo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">imie</span> <span class="ow">in</span> <span class="n">imiona</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">imie</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ania
+Basia
+Kasia
+Zosia
+Czesia
+</pre></div>
+</div>
+</div>
+</div>
+<p>Spróbujmy teraz czegoś bardziej skomplikowanego. Załóżmy, że mamy listę imion. Chcielibyśmy się dowiedzieć, jaka jest średnia ilość liter w tych imionach. Jak to zrobić? Najpierw będziemy musieli stworzyć drugą listę, w której umieścimy długość każdego z imion. Przyda nam się do tego funkcja <code class="docutils literal notranslate"><span class="pre">len()</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imiona</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ala&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Baltazar&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Zenobiusz&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Maks&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Konstantyn&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Jaś&#39;</span><span class="p">,</span> 
+          <span class="s1">&#39;Gosia&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;Ewa&#39;</span><span class="p">]</span>
+
+<span class="c1"># stwórzmy pustą listę, w której trzymać będziemy długości</span>
+<span class="n">dlugosc</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># dla każdego z imion znajdźmy jego długość i umieśćmy na liście</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">imiona</span><span class="p">:</span>
+    <span class="n">dlugosc_imienia</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">dlugosc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dlugosc_imienia</span><span class="p">)</span>
+    
+<span class="n">dlugosc</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3, 8, 9, 4, 10, 3, 5, 3]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ok, otrzymaliśmy listę długość, w której przechowywane są długości poszczególnych imion. Żeby uzyskać średnią, możemy zsumować elementy listy po czym podzielić wynik przez ilość tych elementów. Nic prostszego:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="n">dlugosc</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dlugosc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.625
+</pre></div>
+</div>
+</div>
+</div>
+<p>Widzimy, że nasze imiona średnio mają 5.625 litery.</p>
+</div>
+<div class="section" id="petla-for-a-stringi">
+<h2>Pętla <code class="docutils literal notranslate"><span class="pre">for</span></code> a stringi<a class="headerlink" href="#petla-for-a-stringi" title="Permalink to this headline">¶</a></h2>
+<p>Ciekawostka - nic nie stoi na przeszkodzie, żeby użyć pętli <code class="docutils literal notranslate"><span class="pre">for</span></code> na napisie. Możemy na przykład policzyć, ile liter <em>z</em> znajduje się w jakimś stringu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">napis</span> <span class="o">=</span> <span class="s1">&#39;Brzęczyszczykiewicz&#39;</span>
+<span class="n">licznik</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">napis</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s2">&quot;z&quot;</span><span class="p">:</span>
+        <span class="n">licznik</span> <span class="o">+=</span> <span class="mi">1</span>
+        
+<span class="n">licznik</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jak to działa? Najpierw deklarujemy zmienną z naszym napisem i drugą zmienną, w której przechowywać będziemy wynik naszego liczenia. Piszemy pętlę <code class="docutils literal notranslate"><span class="pre">for</span></code>, która zagląda do każdej litery w napisie <code class="docutils literal notranslate"><span class="pre">napis</span></code> i sprawdza, czy litera ta to <em>z</em>. Jeżeli tak, zwiększa wartość zmiennej <code class="docutils literal notranslate"><span class="pre">licznik</span></code> o 1.</p>
+<p>Na marginesie: zapis <code class="docutils literal notranslate"><span class="pre">licznik</span> <span class="pre">+=</span> <span class="pre">1</span></code> to skrót, który jest równoznaczny z <code class="docutils literal notranslate"><span class="pre">licznik</span> <span class="pre">=</span> <span class="pre">licznik</span> <span class="pre">+</span> <span class="pre">1</span></code>.</p>
+</div>
+<div class="section" id="czytanie-danych-z-pliku">
+<h2>Czytanie danych z pliku<a class="headerlink" href="#czytanie-danych-z-pliku" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;slowa.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;slowa.txt&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;pompa\nrura\nkaloryfer\nframuga&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;slowa.txt&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;pompa&#39;, &#39;rura&#39;, &#39;kaloryfer&#39;, &#39;framuga&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="czytanie-danych-z-plikow-moduly">
+<h2>Czytanie danych z plików, moduły<a class="headerlink" href="#czytanie-danych-z-plikow-moduly" title="Permalink to this headline">¶</a></h2>
+<p>Oprócz wprowadzania danych poprzez wpisywanie ich do kodu naszych programów,  możemy też (i powinniśmy!) korzystać z wielu innych sposobów wprowadzania danych. Jedną z najprostszych opcji jest pobieranie danych z plików.</p>
+<p>Okazuje się, że w Pythonie nie ma wbudowanej funkcji, która pozwalałaby otwierać pliki. Nic straconego! Oprócz niewielkiej liczby wbudowanych funkcji Python posiada setki (o ile nie tysiące) funkcji, do których możesz uzyskać dostęp poprzez tzw. <em>moduły</em>. Moduł to po prostu zbiór funkcji, które coś robią. Sporo najpopularniejszych modułów już została zainstalowana poprzez Anacondę, możesz też doinstalować nowe jeśli tylko masz na to ochotę. My teraz skorzystamy z modułu <code class="docutils literal notranslate"><span class="pre">io</span></code> (skrót od <em>input/output</em>), który służy do wykonywania operacji na plikach.</p>
+<p>Żeby skorzystać z funkcji wewnątrz modułu <code class="docutils literal notranslate"><span class="pre">io</span></code> wystarczy wpisać:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">io</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Po wykonaniu tej komendy uzyskujemy dostęp do funkcji z modułu <code class="docutils literal notranslate"><span class="pre">io</span></code>. Skorzystamy teraz z funkcji z tego modułu do przeczytania danych z pliku, który stworzyłem wcześniej. Plik nazywa się <code class="docutils literal notranslate"><span class="pre">imiona.txt</span></code> i zawiera 100 najpopularniejszych imion nadawanych chłopcom w 2017 roku. Najpierw musimy otworzyć plik i umieścić go w zmiennej:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plik</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;imiona.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Teraz stworzyliśmy zmienną, w której przechowywane jest odwołanie do pliku. Żeby przeczytać dane z pliku, możemy zastosować metodę <code class="docutils literal notranslate"><span class="pre">readlines()</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imiona</span> <span class="o">=</span> <span class="n">plik</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="n">imiona</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Antoni\n&#39;,
+ &#39;Jakub\n&#39;,
+ &#39;Jan\n&#39;,
+ &#39;Szymon\n&#39;,
+ &#39;Franciszek\n&#39;,
+ &#39;Filip\n&#39;,
+ &#39;Aleksander\n&#39;,
+ &#39;Mikołaj\n&#39;,
+ &#39;Wojciech\n&#39;,
+ &#39;Kacper\n&#39;,
+ &#39;Adam\n&#39;,
+ &#39;Michał\n&#39;,
+ &#39;Marcel\n&#39;,
+ &#39;Stanisław\n&#39;,
+ &#39;Wiktor\n&#39;,
+ &#39;Piotr\n&#39;,
+ &#39;Igor\n&#39;,
+ &#39;Leon\n&#39;,
+ &#39;Nikodem\n&#39;,
+ &#39;Mateusz\n&#39;,
+ &#39;Bartosz\n&#39;,
+ &#39;Maksymilian\n&#39;,
+ &#39;Miłosz\n&#39;,
+ &#39;Tymon\n&#39;,
+ &#39;Oliwier\n&#39;,
+ &#39;Alan\n&#39;,
+ &#39;Ignacy\n&#39;,
+ &#39;Tymoteusz\n&#39;,
+ &#39;Oskar\n&#39;,
+ &#39;Dawid\n&#39;,
+ &#39;Tomasz\n&#39;,
+ &#39;Dominik\n&#39;,
+ &#39;Karol\n&#39;,
+ &#39;Krzysztof\n&#39;,
+ &#39;Maciej\n&#39;,
+ &#39;Julian\n&#39;,
+ &#39;Fabian\n&#39;,
+ &#39;Hubert\n&#39;,
+ &#39;Natan\n&#39;,
+ &#39;Gabriel\n&#39;,
+ &#39;Paweł\n&#39;,
+ &#39;Patryk\n&#39;,
+ &#39;Ksawery\n&#39;,
+ &#39;Kamil\n&#39;,
+ &#39;Bartłomiej\n&#39;,
+ &#39;Bruno\n&#39;,
+ &#39;Sebastian\n&#39;,
+ &#39;Krystian\n&#39;,
+ &#39;Borys\n&#39;,
+ &#39;Olaf\n&#39;,
+ &#39;Adrian\n&#39;,
+ &#39;Kajetan\n&#39;,
+ &#39;Kuba\n&#39;,
+ &#39;Artur\n&#39;,
+ &#39;Grzegorz\n&#39;,
+ &#39;Marcin\n&#39;,
+ &#39;Błażej\n&#39;,
+ &#39;Eryk\n&#39;,
+ &#39;Daniel\n&#39;,
+ &#39;Łukasz\n&#39;,
+ &#39;Cezary\n&#39;,
+ &#39;Tadeusz\n&#39;,
+ &#39;Damian\n&#39;,
+ &#39;Tobiasz\n&#39;,
+ &#39;Witold\n&#39;,
+ &#39;Rafał\n&#39;,
+ &#39;Robert\n&#39;,
+ &#39;Przemysław\n&#39;,
+ &#39;Kornel\n&#39;,
+ &#39;Radosław\n&#39;,
+ &#39;Olivier\n&#39;,
+ &#39;Konrad\n&#39;,
+ &#39;Emil\n&#39;,
+ &#39;Mieszko\n&#39;,
+ &#39;Jerzy\n&#39;,
+ &#39;Milan\n&#39;,
+ &#39;Henryk\n&#39;,
+ &#39;Nataniel\n&#39;,
+ &#39;Marek\n&#39;,
+ &#39;Stefan\n&#39;,
+ &#39;Alex\n&#39;,
+ &#39;Kazimierz\n&#39;,
+ &#39;Józef\n&#39;,
+ &#39;Gustaw\n&#39;,
+ &#39;Gracjan\n&#39;,
+ &#39;Ryszard\n&#39;,
+ &#39;Konstanty\n&#39;,
+ &#39;Andrzej\n&#39;,
+ &#39;Aleks\n&#39;,
+ &#39;Arkadiusz\n&#39;,
+ &#39;Dorian\n&#39;,
+ &#39;Leonard\n&#39;,
+ &#39;Brajan\n&#39;,
+ &#39;Teodor\n&#39;,
+ &#39;Alexander\n&#39;,
+ &#39;Juliusz\n&#39;,
+ &#39;Iwo\n&#39;,
+ &#39;Jacek\n&#39;,
+ &#39;Jeremi&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Widzimy, że metoda <code class="docutils literal notranslate"><span class="pre">readlines()</span></code> pobrała nam dane z pliku, linijka po linijce, i umieściła na liście <code class="docutils literal notranslate"><span class="pre">imiona</span></code>. Jest tylko jeden szkopuł - z jakiegoś powodu do każdego imienia mamy doklejone <code class="docutils literal notranslate"><span class="pre">\n</span></code>. Czemu? Bo ten znak oznacza koniec linijki w pliku tekstowym (zwróć uwagę, że ostatni na liście Jeremi nie ma <code class="docutils literal notranslate"><span class="pre">\n</span></code>). Żeby się tego pozbyć, możemy zastosować metodę <code class="docutils literal notranslate"><span class="pre">replace()</span></code>, która zamienia fragment napisu na inny napis. W pierwszym argumencie podajemy to czego ma szukać a w drugim na co ma zamienić.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imiona_bez_n</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">imiona</span><span class="p">:</span>
+    <span class="n">bez_n</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">imiona_bez_n</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bez_n</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>W porządku. Po tej operacji powinniśmy mieć już elegancką listę imion:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imiona_bez_n</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Antoni&#39;,
+ &#39;Jakub&#39;,
+ &#39;Jan&#39;,
+ &#39;Szymon&#39;,
+ &#39;Franciszek&#39;,
+ &#39;Filip&#39;,
+ &#39;Aleksander&#39;,
+ &#39;Mikołaj&#39;,
+ &#39;Wojciech&#39;,
+ &#39;Kacper&#39;,
+ &#39;Adam&#39;,
+ &#39;Michał&#39;,
+ &#39;Marcel&#39;,
+ &#39;Stanisław&#39;,
+ &#39;Wiktor&#39;,
+ &#39;Piotr&#39;,
+ &#39;Igor&#39;,
+ &#39;Leon&#39;,
+ &#39;Nikodem&#39;,
+ &#39;Mateusz&#39;,
+ &#39;Bartosz&#39;,
+ &#39;Maksymilian&#39;,
+ &#39;Miłosz&#39;,
+ &#39;Tymon&#39;,
+ &#39;Oliwier&#39;,
+ &#39;Alan&#39;,
+ &#39;Ignacy&#39;,
+ &#39;Tymoteusz&#39;,
+ &#39;Oskar&#39;,
+ &#39;Dawid&#39;,
+ &#39;Tomasz&#39;,
+ &#39;Dominik&#39;,
+ &#39;Karol&#39;,
+ &#39;Krzysztof&#39;,
+ &#39;Maciej&#39;,
+ &#39;Julian&#39;,
+ &#39;Fabian&#39;,
+ &#39;Hubert&#39;,
+ &#39;Natan&#39;,
+ &#39;Gabriel&#39;,
+ &#39;Paweł&#39;,
+ &#39;Patryk&#39;,
+ &#39;Ksawery&#39;,
+ &#39;Kamil&#39;,
+ &#39;Bartłomiej&#39;,
+ &#39;Bruno&#39;,
+ &#39;Sebastian&#39;,
+ &#39;Krystian&#39;,
+ &#39;Borys&#39;,
+ &#39;Olaf&#39;,
+ &#39;Adrian&#39;,
+ &#39;Kajetan&#39;,
+ &#39;Kuba&#39;,
+ &#39;Artur&#39;,
+ &#39;Grzegorz&#39;,
+ &#39;Marcin&#39;,
+ &#39;Błażej&#39;,
+ &#39;Eryk&#39;,
+ &#39;Daniel&#39;,
+ &#39;Łukasz&#39;,
+ &#39;Cezary&#39;,
+ &#39;Tadeusz&#39;,
+ &#39;Damian&#39;,
+ &#39;Tobiasz&#39;,
+ &#39;Witold&#39;,
+ &#39;Rafał&#39;,
+ &#39;Robert&#39;,
+ &#39;Przemysław&#39;,
+ &#39;Kornel&#39;,
+ &#39;Radosław&#39;,
+ &#39;Olivier&#39;,
+ &#39;Konrad&#39;,
+ &#39;Emil&#39;,
+ &#39;Mieszko&#39;,
+ &#39;Jerzy&#39;,
+ &#39;Milan&#39;,
+ &#39;Henryk&#39;,
+ &#39;Nataniel&#39;,
+ &#39;Marek&#39;,
+ &#39;Stefan&#39;,
+ &#39;Alex&#39;,
+ &#39;Kazimierz&#39;,
+ &#39;Józef&#39;,
+ &#39;Gustaw&#39;,
+ &#39;Gracjan&#39;,
+ &#39;Ryszard&#39;,
+ &#39;Konstanty&#39;,
+ &#39;Andrzej&#39;,
+ &#39;Aleks&#39;,
+ &#39;Arkadiusz&#39;,
+ &#39;Dorian&#39;,
+ &#39;Leonard&#39;,
+ &#39;Brajan&#39;,
+ &#39;Teodor&#39;,
+ &#39;Alexander&#39;,
+ &#39;Juliusz&#39;,
+ &#39;Iwo&#39;,
+ &#39;Jacek&#39;,
+ &#39;Jeremi&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Z tą listą możemy już robić wszystko to, co z innymi listami. Zastanawiasz się, które miejsce na liście frekwencyjnej zajmuje tradycyjne, staropolskie imie <em>Brajan</em>? Oto odpowiedź:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imiona_bez_n</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;Brajan&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>92
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="ify.html" title="previous page">Instrukcje warunkowe</a>
+    <a class='right-next' id="next-link" href="funkcje.html" title="next page">Funkcje</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>

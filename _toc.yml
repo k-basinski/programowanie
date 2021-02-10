@@ -1,0 +1,16 @@
+- file: wstep
+
+- part: Kurs podstawowy
+  chapters:
+  - file: narzedzia
+  - file: markdown
+  - file: zmienne
+  - file: operatory
+  - file: listy
+  - file: ify
+  - file: petle
+
+- part: Kurs zaawansowany
+  chapters:
+  - file: funkcje
+  - file: moduly
