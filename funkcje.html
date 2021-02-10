@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funkcje &#8212; Programowanie</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Moduły" href="moduly.html" />
+    <link rel="prev" title="Pętle" href="petle.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Programowanie</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="wstep.html">
+   Wstęp
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Kurs podstawowy
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="narzedzia.html">
+   Narzędzia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html#alt-h1">
+   Alt-H1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="zmienne.html">
+   Twój pierwszy program
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="operatory.html">
+   Operatory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="listy.html">
+   Listy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ify.html">
+   Instrukcje warunkowe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="petle.html">
+   Pętle
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Kurs zaawansowany
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Funkcje
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="moduly.html">
+   Moduły
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/funkcje.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/funkcje.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prosty-przyklad">
+   Prosty przykład
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zwracanie-wartosci">
+   Zwracanie wartości
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wiele-argumentow">
+   Wiele argumentów
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#odwolania-przez-pozycje-i-przez-nazwe">
+   Odwołania przez pozycję i przez nazwę
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wartosci-domyslne">
+   Wartości domyślne
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zakresy-zmiennych-a-funkcje">
+   Zakresy zmiennych a funkcje
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="funkcje">
+<h1>Funkcje<a class="headerlink" href="#funkcje" title="Permalink to this headline">¶</a></h1>
+<p>Znasz już sporo funkcji w języku Python. Potrafisz wyświetlać tekst (<code class="docutils literal notranslate"><span class="pre">print()</span></code>), pobrać tekst od użytkownika i umieścić w zmiennej (<code class="docutils literal notranslate"><span class="pre">input()</span></code>), sprawdzać typ zmiennej (<code class="docutils literal notranslate"><span class="pre">type()</span></code>), zmienić zmienną w inta (<code class="docutils literal notranslate"><span class="pre">int()</span></code>), floata (<code class="docutils literal notranslate"><span class="pre">float()</span></code>) czy stringa (<code class="docutils literal notranslate"><span class="pre">str()</span></code>). Potrafisz też stosować <em>metody</em> - specjalne funkcje skojarzone z obiektami, np. z listami. Za pomocą metod można np. dodawać elementy do listy (<code class="docutils literal notranslate"><span class="pre">append()</span></code>), usuwać elementy z listy (<code class="docutils literal notranslate"><span class="pre">remove()</span></code> albo <code class="docutils literal notranslate"><span class="pre">pop()</span></code>) Wszystkie poznane przez ciebie do tej pory funkcje wyglądają i działają podobnie - najpierw podajesz nazwę funkcji a później, w nawiasach, <em>argumenty</em>. O funkcjach warto myśleć jako o <em>czarnych skrzynkach</em>. Dajemy im jakieś dane w postaci argumentów i oczekujemy, że zwrócą nam jakiś wynik. Niebardzo interesuje nas sposób, w jaki to robią - zależy nam na wyniku ich działania.</p>
+<p>Nic nie stoi na przeszkodzie, żeby w Pythonie tworzyć własne funkcje. Jest to jedną z najważniejszych i najbardziej przydatnych umiejętności jakich się nauczymy na tym kursie. Przydatne jest to co najmniej z trzech powodów:</p>
+<ol class="simple">
+<li><p>Żeby prosto i czytelnie realizować powtarzające się zadania</p></li>
+<li><p>Żeby zwiększyć jasność i czytelność kodu</p></li>
+<li><p>Żeby móc fragmenty napisanego kodu wykorzystać ponownie w innym programie</p></li>
+</ol>
+<div class="section" id="prosty-przyklad">
+<h2>Prosty przykład<a class="headerlink" href="#prosty-przyklad" title="Permalink to this headline">¶</a></h2>
+<p>Jak stworzyć własną funkcję w Pythonie? Popatrz na poniższy przykład. Powiedzmy, że chcemy napisać funkcję, która oblicza pierwiastek trzeciego stopnia z danej liczby. Funkcja bierze jeden argument, zmienną <code class="docutils literal notranslate"><span class="pre">a</span></code>, oblicza pierwiastek trzeciego stopnia i drukuje na ekranie wynik. Jej definicja wygląda jakoś tak:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pierw_3</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">wynik</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek trzeciego stopnia z&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s1">&#39;to&#39;</span><span class="p">,</span> <span class="n">wynik</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>W ten sposób <em>zdefiniowaliśmy</em> funkcję o nazwie <code class="docutils literal notranslate"><span class="pre">pierw_3</span></code>. Nazwy funkcji muszą przestrzegać tych samych reguł co nazwy zmiennych. Możemy teraz z niej skorzystać:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pierw_3</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">pierw_3</span><span class="p">(</span><span class="mi">27</span><span class="p">)</span>
+<span class="n">pierw_3</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">pierw_3</span><span class="p">(</span><span class="mi">123445</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pierwiastek trzeciego stopnia z 8 to 2.0
+Pierwiastek trzeciego stopnia z 27 to 3.0
+Pierwiastek trzeciego stopnia z 1000 to 9.999999999999998
+Pierwiastek trzeciego stopnia z 123445 to 49.79180093293937
+</pre></div>
+</div>
+</div>
+</div>
+<p>Widzimy, że każde kolejne wywołanie funkcji <code class="docutils literal notranslate"><span class="pre">pierw_3()</span></code> spowodowało wykonanie całego kodu znajdującego się w definicji funkcji, dla odpowiedniej wartości argumentu a.</p>
+</div>
+<div class="section" id="zwracanie-wartosci">
+<h2>Zwracanie wartości<a class="headerlink" href="#zwracanie-wartosci" title="Permalink to this headline">¶</a></h2>
+<p>Powiedzmy, że chcielibyśmy na wyniku naszego pierwiastkowania wykonać kolejne operacje matematyczne. Samo wydrukowanie wartości na ekranie jest rozwiązaniem mało elastycznym - jest duża szansa, że pisząc inny program w przyszłości nie będziemy w stanie skorzystać z napisanej przez nas funkcji. Musimy nieco zmodyfikować naszą funkcję tak, aby <em>zwracała</em> ona wartość. Wartość tą możemy później wykorzystać poprzez przypisanie jej do zmiennej (operatorem <code class="docutils literal notranslate"><span class="pre">=</span></code>) albo umieszczenie w innej funkcji. Robimy to przy pomocy słowa kluczowego <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pierw_3</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="n">wynik</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wynik</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">pierw_3</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">pierw_3</span><span class="p">(</span><span class="mi">27</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek 3-go stopnia z 8 to&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;a z 27 to&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pierwiastek 3-go stopnia z 8 to 2.0 a z 27 to  3.0
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="wiele-argumentow">
+<h2>Wiele argumentów<a class="headerlink" href="#wiele-argumentow" title="Permalink to this headline">¶</a></h2>
+<p>Co jeśli chcielibyśmy, aby nasza funkcja liczyła pierwiastek dowolnego stopnia a nie tylko trzeciego? Musimy przekazać jej kolejny argument - nazwijmy go <code class="docutils literal notranslate"><span class="pre">stopien</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pierwiastek</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">stopien</span><span class="p">):</span>
+    <span class="n">wynik</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">stopien</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wynik</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Teraz wywołanie naszej funkcji musi zawierać w sobie również drugi argument. Najprościej dodać go po przecinku:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek kwadratowy z 4 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek trzeciego stopnia z 8 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek 4 stopnia z 16 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pierwiastek kwadratowy z 4 to 2.0
+Pierwiaswtek trzeciego stopnia z 8 to 2.0
+Pierwiastek 4 stopnia z 16 to 2.0
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="odwolania-przez-pozycje-i-przez-nazwe">
+<h2>Odwołania przez pozycję i przez nazwę<a class="headerlink" href="#odwolania-przez-pozycje-i-przez-nazwe" title="Permalink to this headline">¶</a></h2>
+<p>W funkcji powyżej odwołowywaliśmy się do argumentów <em>przez pozycję</em>. Python przyporządkował pierwszy argument na liście do zmiennej <code class="docutils literal notranslate"><span class="pre">a</span></code>, dlatego że w definicji ta zmienna była podana jako pierwsza. Analogicznie, drugi argument na liście został przyporządkowany do zmiennej <code class="docutils literal notranslate"><span class="pre">stopnien</span></code>, ponieważ była druga na liście. Do argumentów w funkcjach możemy odwoływać się również przez ich nazwę. Robi się to tak:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek 5 stopnia z 100000 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="n">stopien</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">100000</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pierwiastek 5 stopnia z 100000 to 10.000000000000002
+</pre></div>
+</div>
+</div>
+</div>
+<p>Podając wprost nazwy argumentów, możemy je umieścić w dowolnej kolejności. Jest to bardzo praktyczne, jeżeli funkcje mają bardzo dużo argumentów.</p>
+</div>
+<div class="section" id="wartosci-domyslne">
+<h2>Wartości domyślne<a class="headerlink" href="#wartosci-domyslne" title="Permalink to this headline">¶</a></h2>
+<p>Co, jeśli chcemy, aby niektóre argumenty przyjmowały wartości <em>domyślne</em>, tzn. jeżeli nie są podane na liście argumentów w wywołaniu funkcji, to przyjmują z góry określoną wartość? Np. chcielibyśmy, aby nasza funkcja pierwiastkująca po otrzymaniu tylko jednego argumentu domyślnie obliczała pierwiastek kwadratowy. Musimy zmodyfikować definicję funkcji w ten sposób:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pierwiastek</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">stopien</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">wynik</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">stopien</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wynik</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Teraz możemy skorzystać z wartości domyślnej poprzez nie podawanie drugiego argumentu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek kwadratowy z 4 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek kwadratowy z 9 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Pierwiastek trzeciego stopnia z 8 to&#39;</span><span class="p">,</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Pierwiastek kwadratowy z 4 to 2.0
+Pierwiastek kwadratowy z 9 to 3.0
+Pierwiastek trzeciego stopnia z 8 to 2.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>W ten sposób zdefiniowanych jest wiele funkcji w Pythonie. Zerknijmy w dokumentację funkcji <code class="docutils literal notranslate"><span class="pre">print()</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">?</span>print<span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Red">Docstring:</span>
+print(value, ..., sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)
+
+Prints the values to a stream, or to sys.stdout by default.
+Optional keyword arguments:
+file:  a file-like object (stream); defaults to the current sys.stdout.
+sep:   string inserted between values, default a space.
+end:   string appended after the last value, default a newline.
+flush: whether to forcibly flush the stream.
+<span class=" -Color -Color-Red">Type:</span>      builtin_function_or_method
+</pre></div>
+</div>
+</div>
+</div>
+<p>Okazuje się, że oprócz argumentów do “wydrukowania” możemy w funkcji print przekazać argument <code class="docutils literal notranslate"><span class="pre">sep</span></code> (czyli separator, domyślnie spacja) oraz <code class="docutils literal notranslate"><span class="pre">end</span></code> (co dodać na końcu drukowanego stringa, domyślnie jest to znak końca linii.</p>
+</div>
+<div class="section" id="zakresy-zmiennych-a-funkcje">
+<h2>Zakresy zmiennych a funkcje<a class="headerlink" href="#zakresy-zmiennych-a-funkcje" title="Permalink to this headline">¶</a></h2>
+<p>Pisząc własne funkcje trzeba koniecznie pamiętać o tym, że wszystkie zmienne definiowane wewnątrz funkcji pozostają <em>lokalne</em>, tj. nie są widoczne poza funkcją. Zwróć uwagę na poniższy przykład:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pierwiastek</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">stopien</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="n">wynik</span> <span class="o">=</span> <span class="n">a</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">stopien</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wynik</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">wynik</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-30-f1e79908c904&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">a</span> <span class="o">=</span> <span class="n">pierwiastek</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="n">wynik</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;wynik&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>Skąd ten błąd? <code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'wynik'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span></code> oznacza, że zmienna wynik nie została zdefiniowana. Python zdaje się <em>nie widzieć</em> zmiennej znajdującej się wewnątrz funkcji. Musisz pamiętać, że jest to właściwe zachowanie - funkcje to “czarne skrzynki”, do których dane trafiają poprzez argumenty a wynik ich działania zwracany jest poprzez słowo kluczowe <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="petle.html" title="previous page">Pętle</a>
+    <a class='right-next' id="next-link" href="moduly.html" title="next page">Moduły</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
